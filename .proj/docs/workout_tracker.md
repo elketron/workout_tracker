@@ -32,25 +32,25 @@ einddatum 6/12
 
 ## database
 exersice {
-    naam,
-    categorie, -> categorie table // 1 oefening kan in meerdere categorieen zitten
+    naam, [PK]
+    categorie, -> categorie table [1 - n]
     goal,
     reps,
     keer per week,
-    gewichten -> gewichten table
+    gewichten -> gewichten table [1 - 1]
 }
 
 categorieen {
-    id,
-    naam,
+    naam, [PK]
     description
 }
 
 gewichten {
-    id,
+    id, [PK]
     datum,
     het gewicht,
-    moeilijkheidsgraad
+    moeilijkheidsgraad,
+    kon het afwerken
 }
 
 generator settings {
