@@ -1,0 +1,4 @@
+# Workout Tracker
+
+# dependencies 
+- kivy
